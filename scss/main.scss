@@ -1,0 +1,56 @@
+@import './variable';
+@import './config';
+@import './nav';
+
+
+.header{
+    position: relative;
+
+    &-content{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        padding: 30px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .img{
+            width: 100%;
+            display: flex;
+            // background: url('../img/green-hand.png');
+            // background-repeat: no-repeat;
+            // background-size: cover;
+
+            img{
+                width: 100%;
+                margin-left: 20%;
+            }
+        
+
+        }
+
+        .text{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 26px;
+                color: $primary-color;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+}
